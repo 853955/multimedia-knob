@@ -39,7 +39,7 @@ class ConsumerControl:
         ``usage``.
         """
         self._consumer_device = find_device(devices, usage_page=0x0C, usage=0x01)
-
+ 
         # Reuse this bytearray to send consumer reports.
         self._report = bytearray(2)
 
